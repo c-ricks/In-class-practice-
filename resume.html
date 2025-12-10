@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Ricks | Data and Marketing Analyst</title>
+    <style>
+        /* General Setup */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background-color: #e9ecef;
+            color: #343a40;
+            line-height: 1.6;
+        }
+        
+        /* Main Container for Resume Layout */
+        .resume-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row; /* Default for desktop */
+        }
+
+        /* Sidebar (Left Column) */
+        .sidebar {
+            background-color: #0056b3; /* BYU Blue */
+            color: #ffffff;
+            padding: 30px 20px;
+            width: 30%;
+            min-width: 250px;
+        }
+        
+        /* Main Content (Right Column) */
+        .main-content {
+            padding: 30px;
+            width: 70%;
+        }
+
+        /* Header & Contact Info */
+        header {
+            text-align: left;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #ced4da;
+            margin-bottom: 25px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #0056b3;
+            font-weight: 700;
+        }
+        header .role {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-top: 5px;
+            display: block;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+        .contact-info {
+            padding-top: 15px;
+        }
+
+        /* Section Styling */
+        h2 {
+            font-size: 1.4em;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        /* Experience & Education Entries */
+        .entry-header {
+            overflow: hidden; 
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .job-title, .degree {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #212529;
+            line-height: 1.2;
+        }
+        .company, .school {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 2px;
+            display: block;
+        }
+        .date, .location {
+            font-size: 0.85em;
+            color: #6c757d;
+            flex-shrink: 0;
+            margin-left: 10px;
+            text-align: right;
+        }
+        .job-entry, .edu-entry {
+            margin-bottom: 20px;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none; /* Removing default bullet */
+            padding-left: 0;
+            margin-top: 5px;
+        }
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        ul li::before {
+            content: '•';
+            color: #0056b3;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        /* Skills Specific Styling */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .skills-list li {
+            background-color: #e6f0ff;
+            color: #0056b3;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-right: 0; /* Override general list margin */
+            margin-bottom: 5px;
+        }
+        .skills-list li::before {
+            content: none;
+        }
+
+        /* Education Summary in Sidebar */
+        .sidebar .edu-info {
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 15px;
+        }
+        .sidebar .edu-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        /* Media Query for smaller screens (single column layout) */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+                margin: 0;
+                box-shadow: none;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+                min-width: auto;
+            }
+            .sidebar {
+                padding: 20px;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <div class="sidebar">
+            <h2 style="color: white; border-bottom-color: white;">Contact</h2>
+            <div class="contact-info">
+                <a href="#">Provo, UT</a>
+                <a href="tel:253-329-0137">253-329-0137</a>
+                <a href="mailto:cricks24@byu.edu">cricks24@byu.edu</a>
+                <a href="www.linkedin.com/in/carson-ricks-82a586350" target="_blank">LinkedIn Profile</a>
+            </div>
+
+            <h2 style="color: white; border-bottom-color: white; margin-top: 30px;">Education Summary</h2>
+            <div class="edu-info">
+                <p><strong>Brigham Young University</strong></p>
+                <p>BS, Applied Statistics (Minor IS)</p>
+                <p>GPA: 3.77</p>
+            </div>
+            
+            <h2 style="color: white; border-bottom-color: white; margin-top: 30px;">Key Technical Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>R/R-studio</li>
+                <li>SQL</li>
+                <li>Tableau</li>
+                <li>C++</li>
+                <li>VBA</li>
+                <li>Adobe Suite</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Carson Ricks</h1>
+                <span class="role">Data and Marketing Analyst</span>
+            </header>
+
+            <section id="profile">
+                <h2>Profile</h2>
+                <p>Applied Statistics major and Information Systems Minor, transitioning from a Computer Science background. Proven ability to leverage statistical analysis (R, Python) to optimize marketing efficiency and drive organizational success in a high-level Division I athletic environment. Proficient in statistical software, database management, and professional media tools (Adobe Suite).</p>
+            </section>
+
+            <div class='tableauPlaceholder' id='viz1765406291607' style='position: relative'><noscript><a href='#'><img alt='The American Political Universe ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JB&#47;JB264QT8B&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;JB264QT8B' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JB&#47;JB264QT8B&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='_gl=1*1v66pkl*_ga*MzM0MDgwMjYuMTc2NTQwNjE4Mg..*_ga_8YLN0SNXVS*czE3NjU0MDYxODEkbzEkZzEkdDE3NjU0MDYyNjgkajU3JGwwJGgw*_gcl_au*MTIwMjIwMDQ2OS4xNzY1NDA2MTgy' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1765406291607');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='1227px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+            <section id="experience">
+                <h2>Professional Experience</h2>
+
+                <div class="job-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="job-title">ROC Assistant</span>
+                            <span class="company">Brigham Young University Athletic Department</span>
+                        </div>
+                        <span class="date">Aug 2025–Present<br>Provo UT</span>
+                    </div>
+                    <ul>
+                        <li>Led marketing and student section experience for women's soccer and baseball, while supporting all other sports.</li>
+                        <li>Planned and executed marketing campaigns targeting specific student demographics (on-campus, dorms, social media) to maximize outreach.</li>
+                        <li>Performed statistical analysis on a custom-built dataset (self made) using R and Python to maximize marketing budget efficiency.</li>
+                        <li>Optimized in-game student experience through on-court roles for Men's Basketball and Football.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="job-title">Social Media Manager</span>
+                            <span class="company">Self Employed</span>
+                        </div>
+                        <span class="date">Nov 2023–Present<br>Provo UT</span>
+                    </div>
+                    <ul>
+                        <li>Manages a social media page generating over 3 million views per month.</li>
+                        <li>Planned and executed a highly engaging Instagram content campaign, maximizing platform-specific features.</li>
+                        <li>Utilized Adobe tools including Photoshop, Illustrator, and Premier Pro for content development.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="job-title">Marketing Intern</span>
+                            <span class="company">Brigham Young University Athletic Department</span>
+                        </div>
+                        <span class="date">Aug 2024–Aug 2025<br>Provo UT</span>
+                    </div>
+                    <ul>
+                        <li>Contributed to having one of the most successful student attendance rates across all sports in collegiate athletics.</li>
+                        <li>Executed many types of marketing campaigns targeting student attendance.</li>
+                        <li>Conducted a statistical analysis on crowd impact on free throw rates across the last 2 years for BYU.</li>
+                    </ul>
+                </div>
+                
+                <div class="job-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="job-title">Ballroom Dance Coach</span>
+                            <span class="company">Pacific Ballroom Dance</span>
+                        </div>
+                        <span class="date">Aug 2021–Jun 2023<br>Auburn WA</span>
+                    </div>
+                    <ul>
+                        <li>Taught children aged 5-10 beginning and intermediate ballroom dance technique.</li>
+                        <li>Displayed the ability to make effective lesson plans leading to the development of each dancer.</li>
+                        <li>Taught students both individual and group choreography leading them through multiple performances and shows.</li>
+                        <li>Effectively communicated through issues and concerns with parents on an individual basis for each student.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+
+                <div class="edu-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="degree">Bachelor of Science, Applied Statistics</span>
+                            <span class="school">Brigham Young University</span>
+                        </div>
+                        <span class="date">Aug 2023–Present<br>Provo UT</span>
+                    </div>
+                    <ul style="margin-top: 5px;">
+                        <li>Minor in Information Systems</li>
+                        <li>GPA: 3.77</li>
+                        <li>Club Membership: Sports Analytics Club (3 Years), Board Game Club (3 Years), Cougs vs Cancer (>1 Year)</li>
+                    </ul>
+                </div>
+
+                <div class="edu-entry">
+                    <div class="entry-header">
+                        <div>
+                            <span class="degree">High School Diploma</span>
+                            <span class="school">Auburn Riverside High School</span>
+                        </div>
+                        <span class="date">Sep 2019–Jun 2023<br>Auburn WA</span>
+                    </div>
+                    <ul style="margin-top: 5px;">
+                        <li>GPA: 3.99</li>
+                        <li>Graduated with high honors</li>
+                        <li>Ranked 3rd out of 400+ students in graduating class</li>
+                        <li>Took and passed with a score of 3 or higher 10 AP classes</li>
+                    </ul>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+</body>
+</html>
